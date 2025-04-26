@@ -19,10 +19,28 @@ body {
 }
 
 header {
-    background: #1a1a1d;
+    background: linear-gradient(135deg, #1a1a1d 0%, #33334d 100%);
     color: #fff;
-    padding: 40px 0;
-    text-align: center;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-image img {
+    max-width: 150px;
+    border-radius: 50%;
+    border: 3px solid #ffcc00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
@@ -119,6 +137,22 @@ a:hover {
     color: #ff6600;
 }
 
+.resume-btn {
+    display: inline-block;
+    background: #ffcc00;
+    color: #1a1a1d;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: background 0.3s ease;
+}
+
+.resume-btn:hover {
+    background: #ffdb4d;
+}
+
 footer {
     background: #1a1a1d;
     color: #ccc;
@@ -138,5 +172,14 @@ footer {
 
     .skills-list {
         flex-direction: column;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 20px;
     }
 }
