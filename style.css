@@ -37,7 +37,7 @@ header {
 }
 
 .hero-image img {
-    max-width: 150px;
+    max-width: 15px;
     border-radius: 50%;
     border: 3px solid #ffcc00;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
